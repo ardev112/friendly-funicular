@@ -1,0 +1,46 @@
+* {
+    cursor: none;
+}
+
+.wrapper {
+    background: white;
+    height: 100vh;
+        cursor: none;
+}
+
+nav ul li a i:hover::after {
+    width: 100%;
+}
+
+nav ul li a i:hover {
+    cursor: none;
+}
+
+nav ul li a i {
+    cursor: none;
+}
+
+.cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(40 83 206);
+    border: 5px solid rgb(40 83 206);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition-duration: 100ms;
+    transition: width 1000ms, height 1000ms;
+}
+.cursor.large {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(40 83 206);
+    border: 10px solid rgb(40 83 206);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition-duration: 100ms;
+    transition: width 1000ms, height 1000ms;
+}
